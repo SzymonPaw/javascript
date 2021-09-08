@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            var osoba_1 =
+            {
+            nazwisko        :'Kowalski',
+            imie            :'Jan',
+            zawod           :'piekarz',
+            wyswietl        :function ()
+                {
+                    document.write(this.nazwisko + ' ' + this.imie + ' ' + this.zawod);
+                }
+            }
+
+            var tiktoker =
+            {
+            nazwisko        :'Raczkowski',
+            imie            :'Max',
+            followy         :'100000',
+            auto            :'Audica',
+            wyswietl        :function ()
+                {
+                    document.write(this.nazwisko + ' ' + this.imie + ' ' + this.zawod + ' ' + this.auto);
+                },
+            zarobki         :function()
+                {
+                    document.write(this.followy/1000);
+                },
+            roczne        :function ()
+                {
+                    document.write((this.followy/1000)*12);
+                },
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="osoba_1.wyswietl()" value="Osoba 1" />
+        <input type="button" onclick="tiktoker.wyswietl()" value="Osoba 2" />
+        <input type="button" onclick="tiktoker.zarobki()" value="Zarobki" />
+        <input type="button" onclick="tiktoker.roczne()" value="Roczne Zarobki" />
+    </body>
+</html>
